@@ -1,0 +1,15 @@
+verbose: true
+model_save_path: './saved_model'
+dataset:
+  training_data_path: './dataset/training_data.csv'
+  test_data_path: './dataset/test_data.csv'
+  validation_size: 0.2
+random_state: 42
+
+# Add model configuration
+model:
+  decision_tree:
+    criterion: 'gini'  # You can choose 'gini' or 'entropy'
+  random_forest:
+    n_estimators: 100  # Example of random forest configuration
+    max_depth: 10
